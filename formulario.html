@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Documento</title>
+
+<style>
+    form {
+        background-color: cornsilk;
+        padding: 5px;
+        width: 420px;
+        border: 1px solid blue;
+    }
+    input {
+        margin-top: 2px;
+        color:red;
+    }
+
+</style>
+</head>
+<body>
+
+ <form method="post" action="#">
+<label for="nome">Nome:</label> <br>
+<input required autofocus placeholder="Digite o nome" id="name" name ="nome "type="text">
+<br>
+<label for="end">Endereço:</label><br>
+<input placeholder="Digite o endereço" id="end" name ="end" type="text">
+<br>
+<label for="Senha">Senha:</label>
+<input required placeholder="Digite uma senha" type="password" id="senha" name ="senha">
+<br>
+<label for="fruta">Qual a sua fruta preferida:</label><br>
+<input id="laranja" type="checkbox" name="laranja" value="laranja">
+<label for="laranja">Laranja</label><br>
+<input id="pera" type="checkbox" name="pera" value="pera" checked>
+<label for="pera">Pera</label><br>
+Qual o seu time? <br>
+<input type="radio" name="time" value="GRE" checked> Grêmio
+<input type="radio" name="time" value="Flu"> Fluminense<br>
+<br>
+Cor:<input type="color" name="favcolor"><br>
+E-mail:<input type="email"><br>
+Numero:<input type="number" min="10" max="30"><br>
+Arquivo:<input type="file"><br>
+Range:<input type="range" min="1" max="10"><br>
+url:<input type="url"><br>
+Data:<input type="date" name="data"><br>
+Entre com uma data antes de janeiro e dezembro: <input type="date" min="2019-01-01" max="2019-12-31"><br>
+informe o mes: <input type="month"><br>
+Observação:
+<br>
+<textarea name="obs" cols="40" rows="20" placeholder="Digite aqui!"></textarea>
+<br>
+Selecione a cidade:
+<select name="cidade">
+    <option value="blumenal">Blumenal</option>
+    <option value="joinville">Joinville</option>
+    <option value="jaragua">Jaraguá do Sul</option>
+</select>
+<br>
+Selecione a cidade:
+<select name="cidade" size="3" multiple>
+    <option value="blumenal">Blumenal</option>
+    <option value="joinville">Joinville</option>
+    <option selected value="jaragua">Jaraguá do Sul</option>
+</select>
+<br>
+<input type="reset" value="Limpar">
+<input type="submit" value="Enviar">
+<input type="button" value="Clique aqui" onclick="alert('ola humano')">
+
+<br>
+</form>
+<br>
+<form oninput ="x.value=parseInt(a.value)+parseInt(b.value)">
+num1:0 <input type="range" id="a" name="a" value="50">100<br>
+num2:0 <input type="number" id="b" name="b" value="50"><br>
+Resultado: <output name="x" for="a b"> 
+</output>
+<br>
+<br>
+</form>
+
+</body>
+</html>
