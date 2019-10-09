@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Documento</title>
+</head>
+
+<body>
+    <script>
+       function aleatorio(inferior,superior){
+           numPossibilidades = superior - inferior;
+           aleat = Math.random() *  numPossibilidades;
+           aleat = Math.floor(aleat);
+           return parseInt(inferior) + aleat
+        };
+           document.write(aleatorio(1,255));
+
+        var valor = Math.PI;
+        var res  = valor.toFixed(2);
+        console.log("Resultado: "+ res);
+
+        var n1 = new Number();
+        console.log(n1); //Exibe um 0
+        var n2 = new Number("oi");
+        console.log(n2); //Exibe NaN
+        var n3 = new Number("123");
+        console.log(n3); //Exibe 123
+
+
+    </script>
+</body>
+
+</html>
