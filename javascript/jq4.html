@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- materialize.css -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/customizado.css">
+
+    <!-- viewport para mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <style>
+        .azul {
+            color: blue;
+        }
+
+        .verm {
+            color: crimson;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="a1">Testes e mais teste</h1>
+
+<button id="atv" class="btn">Ativar</button>
+<button id="rem" class="btn">Remover</button>
+    <!-- JavaScript no final do body para otimizar o carregamento -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // jqCssSet
+        // $("h1").css("color", "pink");
+        // jqClassAdd
+        // $("h1").addClass("azul");
+        // jqClick
+        $("#atv").click(function () { 
+            // jqClassAdd
+            $("#a1").addClass("azul");
+        });
+        // jqClick
+        $("#rem").click(function () { 
+            // jqClassRemove
+            $("#a1").removeClass();
+        });
+    });
+</script>
+
+</body>
+
+</html>
